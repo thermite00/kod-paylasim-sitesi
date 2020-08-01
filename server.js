@@ -394,19 +394,22 @@ app.get("/profil/:id", (req, res) => {
         member.roles.cache.has(IDler.adminRolü) ||
         member.roles.cache.has(IDler.kodPaylaşımcıRolü) ||
         member.roles.cache.has(IDler.boosterRolü) ||
+        member.roles.cache.has(IDler.altınKodlarRolü) ||
         member.roles.cache.has(IDler.hazırSistemlerRolü),
       elmas:
         member.roles.cache.has(IDler.sahipRolü) ||
         member.roles.cache.has(IDler.sahipRolü) ||
         member.roles.cache.has(IDler.kodPaylaşımcıRolü) ||
         member.roles.cache.has(IDler.boosterRolü) ||
+        member.roles.cache.has(IDler.elmasKodlarRolü) ||
         member.roles.cache.has(IDler.hazırSistemlerRolü),
       hazir:
         member.roles.cache.has(IDler.sahipRolü) ||
         member.roles.cache.has(IDler.adminRolü) ||
         member.roles.cache.has(IDler.kodPaylaşımcıRolü) ||
         member.roles.cache.has(IDler.boosterRolü) ||
-        member.roles.cache.has(IDler.hazırSistemlerRolü),
+        member.roles.cache.has(IDler.hazırSistemlerRolü) ||
+        member.roles.cache.has(IDler.hazırAltyapılarRolü),
       destekçi: member.roles.cache.has(IDler.boosterRolü),
       yetkili:
         member.roles.cache.has(IDler.sahipRolü) ||
